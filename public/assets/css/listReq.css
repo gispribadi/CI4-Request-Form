@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+.text-blue {
+    color: #005A9E !important;
+}
+
+.bg-blue {
+    background-color: #005A9E !important;
+}
+
+.bg-bluesky {
+    background-color: #A5BEFF !important;
+}
+
+.bg-body-seconday {
+    background-color: #D9D9D94D !important;
+}
+
+.list-req-items {
+    flex: 0 0 100%;
+    padding: 20px 1%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aclonica-regular {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.fade-effect {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+    .fade-effect {
+        display: block;
+        opacity: 1;
+        animation: fadeIn 1s;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.search-container {
+    position: relative;
+    width: 300px;
+    /* Atur lebar sesuai kebutuhan Anda */
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    /* Sesuaikan padding agar tidak tumpang tindih dengan ikon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Atur tampilan ikon */
+.search-button i {
+    margin-top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
